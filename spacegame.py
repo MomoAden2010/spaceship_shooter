@@ -23,9 +23,15 @@ def update():
         spaceship.x = spaceship.x+2
 
 #def create_bugs():
-    for i in range(8):
-        for j in range(4):
-            enemies.append(Actor("bug"))
+for i in range(8):
+    for j in range(4):
+        enemies.append(Actor("bug"))
+        enemies[-1].x = 100 + 50*i
+        enemies[-1].y = 80 + 50*j
+
+#create_bugs()
+
+
 
 
 pgzrun.go()
